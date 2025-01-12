@@ -28,6 +28,7 @@ from vulnerabilities.importers.apache_httpd import ApacheHTTPDImporter
 from vulnerabilities.importers.apache_kafka import ApacheKafkaImporter
 from vulnerabilities.importers.apache_tomcat import ApacheTomcatImporter
 from vulnerabilities.importers.curl import CurlImporter
+from vulnerabilities.importers.liferay import LiferayImporter
 from vulnerabilities.importers.debian import DebianImporter
 from vulnerabilities.importers.debian_oval import DebianOvalImporter
 from vulnerabilities.importers.elixir_security import ElixirSecurityImporter
@@ -480,4 +481,8 @@ class GithubOSVImprover(ValidVersionImprover):
 
 class CurlImprover(ValidVersionImprover):
     importer = CurlImporter
+    ignorable_versions = []
+
+class LiferayImprover(ValidVersionImprover):
+    importer = LiferayImporter
     ignorable_versions = []

@@ -36,6 +36,7 @@ IMPROVERS_REGISTRY = [
     valid_versions.GithubOSVImprover,
     vulnerability_status.VulnerabilityStatusImprover,
     valid_versions.CurlImprover,
+    valid_versions.LiferayImprover,
     flag_ghost_packages.FlagGhostPackagePipeline,
     enhance_with_kev.VulnerabilityKevPipeline,
     enhance_with_metasploit.MetasploitImproverPipeline,
